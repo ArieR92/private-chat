@@ -38,3 +38,40 @@ nav div a {
     color: #fff;
 }
 
+section {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 1px 2px 10px var(--color-4);
+    padding: 1opx 20px;
+    border-radius: 5px;
+}
+
+section {
+    text-align: center;
+    font-size: 20px;
+    color:var(--color-2);
+}
+
+
+/*register*/
+
+section .form {
+    margin-top: 30px;
+    padding: 0px, 20px;
+}
+
+.input_container {
+    margin-top: 20px;
+}
+
+.input_container input {
+    width:100%;
+    padding: 10px;
+    outline: none;
+    margin-top: 10px;
+    border: 1px solid var(--color-6);
+    border-radius: 5px;
+}
+
+
