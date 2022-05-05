@@ -11,14 +11,21 @@ export const Register = () => {
     loading:false,
   })
 
-  const {name, email, password, error, loading} =data;
-  const handleChange = e = {
-    setData({...data, [e.target.name]: })
+  const {name, email, password, error, loading} = data;
+  const handleChange = e => {
+    setData({...data, [e.target.name]: e.target.value })
   }
+  const handleSubmit = async e => {
+    e.preventDefault();
+  };
+
+
+
+
   return (
     <section>
         <h3>Create an Account</h3>
-          <form action="" className='form'>
+          <form action="" className='form' onSubmit={handleSubmit}>
             <div className='input_container'>
                 <label htmlFor='name'>Name</label>
                 <input type="text" name='name' value={name} onChange={handleChange}/>
